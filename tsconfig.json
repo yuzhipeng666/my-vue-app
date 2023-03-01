@@ -19,8 +19,14 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
-  "references": [{ "path": "./tsconfig.node.json" }],
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "shims.d.ts"
+  ],
+  // "references": [{ "path": "./tsconfig.node.json" }],
   // 编译器默认排除的编译文件
   "exclude": ["node_modules"]
 }
